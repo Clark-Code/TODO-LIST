@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>TO-DO LIST</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--JavaScript-->
+    <script src="main.js" defer></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/cca453f2d9.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- This Project is made for Comp 1073 - Phase One Assignment -->
+<!--Made by Andrew Clark on June 29th 2020 -->
+<!--Revised by Andre Clark on July 27th 2020 for Phase Two-->
+<!--Added Web Speech, Notifications and Weather API-->
+
+<body>
+
+    <header>
+        <h1 class="title">TO-DO LIST
+            <!--FA Icon Cat Paw-->
+            <i class="fas fa-paw" style="color: 
+            #62acb5;"></i>
+        </h1>
+    </header>
+    <!--Weather Container-->
+    <div class="weather-container">
+        <h3>Barrie, Ont.</h3>
+        <img src="" alt="" class="icon">
+        <p class="weather"></p>
+        <p class="temp"></p>
+    </div>
+    <form>
+        <!--create text field for user to enter new task - assign placeholder to guide user-->
+        <input type="text" class="todo-input" placeholder="Add Something New">
+        <button class="todo-add-button">
+            <!--FA icon Plus Square-->
+            <i class="far fa-plus-square"></i>
+        </button>
+        <button class="todo-speech" type="button">
+            <!--FA icon Microphone-->
+            <i class="fas fa-microphone"></i>
+        </button>
+    </form>
+
+    <!--Create section for the todo list content-->
+    <div class="container">
+        <ul class="todo-list">
+
+        </ul>
+    </div>
+    <!--add audio src-->
+    <audio class="meow" src="cat_meow_sms_tone.mp3"></audio>
+
+    <div class="other-projects">
+        <h4>Check out my other projects!</h4>
+        <a href="http://andrew-clark.000webhostapp.com/JavaScript-Drum-Kit/">Drum Kit</a>
+        <a href="http://andrew-clark.000webhostapp.com/Tetris/">Tetris</a>
+    </div>
+
+</body>
+
+</html>

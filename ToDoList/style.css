@@ -1,0 +1,175 @@
+/*give all elements a default position */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* give body an image */
+body {
+    background-image: url(./images/cat.jpg);
+    min-height: 100vh;
+}
+
+/* set header size and position */
+header {
+    font-size: 1.5rem;
+    margin-right: 40%;
+    margin-top: auto;
+}
+
+/* font for h1 */
+h1 {
+    font-family: 'Permanent Marker', cursive, sans-serif;
+}
+
+/* set header and form position and size */
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 40%;
+}
+
+/* set form input and buton size and font */
+.todo-input,
+.todo-add-button,
+.todo-speech {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+/* add color to form button and transition*/
+.todo-add-button,
+.todo-speech {
+    color: #62acb5;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* add on hover effect to form button */
+.todo-add-button:hover,
+.todo-speech:hover {
+    background-color: #62acb5;
+    color: white;
+}
+
+/* position container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40%;
+}
+
+/* position new tasks */
+.todo {
+    margin: 0.5rem;
+    background-color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+/* when checkbox is checked content will go grey and have line through */
+.completed {
+    text-decoration: line-through;
+    color: grey;
+    background-color: lightgrey;
+}
+
+/* makes text larger on hover when hoving over a task */
+.todo:hover {
+    font-size: 1.8rem;
+}
+
+/* remove dot from new tasks and position */
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+/* force checkbox to be beside trashcan */
+.todo li {
+    flex: 1;
+}
+
+/* style trash can button */
+.delete-btn {
+    background: #62acb5;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* style check mark button */
+.checked-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* giving text in new task content padding */
+.todo-content {
+    padding: 0rem 0.5rem;
+
+}
+
+/* no pointer events for check or trash */
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+/* other projects style */
+.other-projects {
+    bottom: 0;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.other-projects a {
+    color: #62acb5;
+    padding: 25px;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40%;
+    padding: 10px;
+}
+
+.weather-container .weather {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.weather-container h3 {
+    font-size: 1.5em;
+}
+
+.weather-container .icon {
+    padding: 10px;
+}
+
+.weather-container .temp {
+    font-size: 1.5em;
+}
